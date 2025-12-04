@@ -1,0 +1,144 @@
+<style>
+    html {
+        font-size: 60%;
+    }
+
+    body {
+        font-size: 16px;
+        background-color: rgb(236, 234, 234);
+        font-family: sans-serif;
+        color: black;
+        background: whitesmoke;
+    }
+
+
+    .principal-cabecalho-container {
+        background-color: #13141f;
+        padding: 2rem 0;
+        /* 1.6 rem vale 16 pixels */
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+
+    .logo-principal {
+        color: white;
+        text-decoration: none;
+    }
+
+    .form-buscador {
+        border: 1rem solid #ccc;
+        max-width: 50rem;
+        margin: 0 auto;
+        border-radius: 1rem;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .entrada-buscador,
+    .botao-buscador {
+        border: none;
+        background: none;
+        outline: none;
+        padding: 1rem;
+    }
+
+    .entrada-buscador {
+        width: 100%;
+        font-size: 1.6rem;
+        padding-right: 4rem;
+    }
+
+    .botao-buscador {
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-radius: 1.5rem;
+    }
+
+    .botao-buscador:focus {
+        outline: 1px solid #13141f;
+        background: rgb(255, 255, 255);
+    }
+
+    .form-buscador:focus-within,
+    .botao-buscador {
+        border-color: #13141f;
+        background-color: white;
+    }
+
+    .principal-conteudo-container {
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .principal-conteudo-lista {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+        gap: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        justify-content: center;
+        background: white;
+        max-width: 64rem;
+        box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4);
+        transition: all 300ms ease-in-out;
+        transform: scale(1);
+    }
+
+    .principal-conteudo-lista:hover {
+        box-shadow: 20px 20px 40px rgba(0, 0, 0, 0.6);
+        transform: scale(1.05);
+    }
+
+    .receita-card {
+        max-width: 100%;
+        height: auto;
+        width: 100%;
+    }
+
+    .receita-card img {
+        width: 100%;
+    }
+
+    .receita-titulo {
+        font-size: 2.4rem;
+        margin: 1.6rem;
+        margin-bottom: 0;
+    }
+
+    .receitas-autor {
+        display: block;
+        flex-wrap: wrap;
+        font-size: 1.4rem;
+        color: #555;
+    }
+
+    .receita-meta {
+        display: flex;
+        background: #ccc;
+        border-top: black 2px solid;
+        text-align: center;
+        text-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    .receitas-footer {
+        text-align: center;
+        margin-top: 0rem;
+        padding: 1rem;
+        background: #13141f;
+    }
+
+    .footer-senai a, .copyright{
+      color: white;
+      text-decoration: none;
+      font-size: 1.4rem;
+    }
+
+    .footer-senai a:hover{
+      text-decoration: underline;
+    }
+</style>
